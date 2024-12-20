@@ -1,0 +1,149 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.header1 {
+    background-color: beige;
+    display: flex;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.socials {
+    display: flex;
+    height: 30px;
+    width: 200px;
+    justify-content: space-evenly;
+    align-self: center;
+}
+.email {
+    display: flex;
+    align-items: center;
+}
+.Contact1 img {
+    height: 20px;
+    width: 20px;
+    margin-right: 10px;
+}
+.Contact1{
+    align-self: center;
+    display: flex;
+    justify-content: space-evenly;
+}
+.Contact2{
+    align-self: center;
+    display: flex;
+    justify-content: space-evenly;
+}
+.number {
+    height: 30px;
+    display: flex;
+    align-items: center;
+}
+.admin_login {
+    display: flex;
+    align-self: center;
+    font-size: 20px;
+    padding: 5px;
+}
+.application_form {
+    display: flex;
+    align-self: center;
+    font-size: 20px;
+    padding: 5px;
+}
+.header2 {
+    background: linear-gradient(to right, #6699ff,#3366ff, #6699ff, #3366ff, #003399);
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.hospital-name img {
+    height: 90px;
+    width: 90px;
+}
+.hname {
+    display: flex;
+    align-items: center;
+}
+.hospitalname{
+    margin-left: 10px;
+}
+.hospital-name {
+    align-items: center;
+}
+.navbar {
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
+    color: white;
+}
+.appointmentbox {
+    background: linear-gradient(to right,#a56e9d, #4b0082, #800080);
+    margin-right: 20px;
+    font-size: 25px;
+    border-radius: 10px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    color: white;
+    font-family: Arial;
+    
+}
+.af:hover, .al:hover {
+color: rgb(6, 206, 83) !important;
+}
+.appointmentbox:hover {
+    background: linear-gradient(to right, #004d00, #008000, #66b366);
+    transition: background 0.5s ease; 
+
+}
+.overlay {
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 80vh; 
+    background: rgba(7, 4, 67, 0.5); 
+    pointer-events: none; 
+    opacity: 0.7;
+}
+.body-image1 {
+position: relative;
+}
+#text1 {
+    position: absolute; 
+    left: 24%;
+    top: 20%;
+    transform: translate(-50%, -50%); 
+    color: white;
+    font-size: 18px; 
+    text-align: center; 
+    pointer-events: none; 
+    font-family: Arial;
+    font-weight: bolder;
+}
+#text2 {
+    position: absolute; 
+    left:27.8%;
+    top: 43%;
+    transform: translate(-50%, -50%); 
+    color: white; 
+    font-size: 54px;
+    text-align: left; 
+    pointer-events: none; 
+    font-family: Arial;
+    font-weight: bolder;
+}
+#text3 {
+    position: absolute; 
+    left: 34.5%;
+    top: 70%;
+    transform: translate(-50%, -50%); 
+    color: white; 
+    font-size: 18px; 
+    text-align: left; 
+    pointer-events: none; 
+    font-family: Arial;
+}

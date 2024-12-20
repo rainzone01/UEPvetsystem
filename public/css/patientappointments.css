@@ -1,0 +1,160 @@
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+    font-size: 16px; /* Slightly larger font for readability */
+}
+
+th {
+    background-color: #4a90e2;
+    color: white;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Modal Styling */
+#formModal {
+    display: none;
+     background: rgba(0, 0, 0, 0.5);
+     position: fixed; 
+     top: 0; left: 0; right: 0; bottom: 0; justify-content:
+     center; align-items: 
+     center; z-index: 9999;
+}
+
+/* Add Appointment Button Styling */
+#addAppointmentButton {
+    padding: 15px 20px;
+    background-color: #2ecc71;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#addAppointmentButton:hover {
+    background-color: #14213D;
+}
+
+/* Container Styling */
+.container {
+    max-width: 1200px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    height: auto;
+}
+
+/* Form Input Styling */
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+label {
+    display: block;
+    margin: 12px 0 5px;
+    color: #555;
+    font-size: 16px; /* Adjusted font size for labels */
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="date"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px; /* Increased margin for better spacing */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+/* Submit/Cancel Buttons Styling */
+.submitcancel {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px; /* Added gap between buttons */
+}
+
+#cancelButton, #submitButton {
+    background-color: #3FA7D6;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 48%;
+}
+
+#submitButton:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+#cancelButton {
+    background-color: #f44336; /* Red */
+}
+
+#cancelButton:hover {
+    background-color: #e53935; /* Darker red on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #formModal {
+        width: 90%; /* Full width on smaller screens */
+        max-width: 100%; /* Ensure it doesn't exceed the screen */
+    }
+
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 20px; /* Smaller title font on mobile */
+    }
+
+    input[type="text"],
+    input[type="tel"],
+    input[type="date"] {
+        padding: 10px;
+        font-size: 14px; /* Adjust font size for inputs */
+    }
+
+    #submitButton, #cancelButton {
+        font-size: 14px; /* Slightly smaller button text */
+        padding: 10px;
+    }
+}
+.backbtn {
+    position: fixed; /* Fixes the position relative to the viewport */
+    top: 10px; /* Adjusts the distance from the top */
+    left: 10px; /* Adjusts the distance from the left */
+    width: 40px; /* Set the width of the button */
+    height: 40px; /* Set the height of the button */
+    background-color: transparent; /* Make background transparent if you don't want one */
+    border-radius: 50%; /* Makes the div circular */
+    overflow: hidden; /* Ensures the image stays within the circle */
+    z-index: 1000; /* Ensures it stays on top of other elements */
+}
+
+.backbtn img {
+    width: 100%; /* Makes the image fit the div */
+    height: 100%; /* Makes the image fill the height */
+    object-fit: cover; /* Ensures the image is scaled properly */
+}

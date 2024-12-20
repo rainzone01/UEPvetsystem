@@ -1,0 +1,170 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(221, 221, 221);
+    height: 100vh;
+}
+.header-container {
+    background-color: #2A4494;
+    height: fit-content;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+}
+.htitle1 {
+    display: flex;
+    width: 250px;
+    align-items: center;
+    height: 70px;  
+}
+.notif-container {
+height: 70px;
+width: 280px;
+display: flex;
+align-self: center;
+align-items: center;
+justify-content: space-between;
+margin-right: 40px;
+}
+/* Sidebar styling */
+.sidebar {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    left: 0;
+    background-color: #2F2F2F;
+    box-shadow: 8px 8px rgba(0, 0, 0, 0.5);
+}
+
+.sidebar li {
+    padding: 15px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    display: block;
+}
+
+.sidebar li:hover {
+    background-color: #575757;
+}
+
+/* Main content styling */
+.main-content-container {
+    margin-left: 260px;
+    padding: 10px;
+}
+
+/* Sidebar header/logo */
+.sidebar .logo {
+    font-size: 24px;
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.square1 {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    height: 150px;
+    align-self: center;
+    justify-content: center;
+    box-shadow: 4px 4px 4px 4px rgb(106, 104, 104);
+    border-color: beige;
+    padding-left: 10px;
+}
+.square2 {
+    width: 500px;
+    display: flex;
+    flex-direction: row;
+    height: 150px;
+    align-self: center;
+    align-items: center;
+    box-shadow: 4px 4px 4px 4px rgb(106, 104, 104);
+    justify-content: space-evenly;
+}
+
+.dashboard-title {
+    height: fit-content;
+    display: flex;
+    align-self: center;
+    margin-bottom: 10px;
+}
+.content1_1{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.doctor-count, .patient-count, .clinic-count {
+    height: 130px;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.doctor-count a:hover, .patient-count a:hover, .clinic-count a:hover {
+    color: red !important;
+}
+.section {
+    display: none; /* Hide all sections by default */
+}
+
+.section.active {
+    display: block; /* Show active section */
+}
+.admin-button {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+.button1 {
+    box-sizing: border-box;
+    border-style: solid;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3 ease;
+}
+.button1:hover {
+    transform: scale(1.05);  /* Slight zoom effect */
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.3);  /* Increase shadow on hover */
+}
+#staff {
+    width: 150px;
+}
+ /*php styling*/
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+table, th, td {
+    border: 1px solid black;
+}
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+button {
+    margin-top: 10px;
+}
+#formModal {
+    display: none;
+    margin-top: 20px;
+}
+
+.log-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
